@@ -10,7 +10,7 @@ interface SidebarProps {
 
 export function Sidebar({ scraperName, step, onReset }: SidebarProps) {
   return (
-    <aside className="w-64 shrink-0 border-r border-zinc-800 bg-[#0B0B0E] flex flex-col">
+    <aside className="hidden md:flex w-64 shrink-0 border-r border-zinc-800 bg-[#0B0B0E] flex-col">
       <div className="px-4 py-3 border-b border-zinc-800">
         <h2 className="text-xs font-bold text-zinc-600 uppercase tracking-wider font-mono">
           My Scrapers
