@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@layer base {
+  :root {
+    --bg: #0b0b0e;
+
+    --pumpkin-50: #fff8f3;
+    --pumpkin-100: #ffddc5;
+    --pumpkin-200: #ffc397;
+    --pumpkin-300: #ffa969;
+    --pumpkin-400: #fe8f3c;
+    --pumpkin-500: #fe750e;
+    --pumpkin-600: #db6103;
+    --pumpkin-700: #ac4e04;
+    --pumpkin-800: #7e3b04;
+    --pumpkin-900: #512704;
+    --pumpkin-950: #251202;
+
+    --zinc-50: #fafafa;
+    --zinc-100: #f4f4f5;
+    --zinc-200: #e4e4e7;
+    --zinc-300: #d4d4d8;
+    --zinc-400: #a1a1aa;
+    --zinc-500: #71717a;
+    --zinc-600: #52525b;
+    --zinc-700: #3f3f46;
+    --zinc-800: #27272a;
+    --zinc-900: #18181b;
+    --zinc-950: #09090b;
+
+    --stone-0: #ffffff;
+    --stone-50: #fafaf9;
+
+    --page-bg: var(--bg);
+    --element-bg: var(--zinc-900);
+    --primary-button-bg: var(--pumpkin-500);
+    --button-label: var(--stone-50);
+    --stroke-muted: var(--zinc-800);
+    --copy-strong: var(--zinc-50);
+    --copy-secondary: var(--zinc-400);
+    --copy-muted: var(--zinc-400);
+    --copy-featured: var(--pumpkin-500);
+    --color-primary: var(--pumpkin-500);
+    --stroke: var(--zinc-600);
+    --border: #27272a;
+    --radius: 0;
+  }
+}
+
+.bg-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--zinc-800),
+    var(--zinc-800) 1px,
+    var(--page-bg) 1px,
+    var(--page-bg) 7px
+  );
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-page-bg text-copy-strong;
+    overflow-x: hidden;
+  }
+  .text-h1 {
+    @apply text-[48px] leading-[0.95] font-bold font-sans md:text-[72px];
+    letter-spacing: -0.04em;
+  }
+  .text-h2 {
+    @apply text-[24px] leading-[1.2] font-bold font-sans md:text-[40px];
+    letter-spacing: -0.03em;
+  }
+  .text-h3 {
+    @apply text-[22px] leading-[1.2] font-bold font-sans md:text-[32px];
+    letter-spacing: -0.03em;
+  }
+  .text-h4 {
+    @apply text-[20px] leading-[1.2] font-medium font-sans md:text-[24px];
+    letter-spacing: -0.03em;
+  }
+  .text-copy-large {
+    @apply text-[16px] leading-[1.5] font-regular font-sans md:text-[20px];
+    letter-spacing: -0.03em;
+  }
+  .text-copy-base-regular {
+    @apply text-[14px] leading-[1.4] font-regular font-sans md:text-[16px];
+    letter-spacing: -0.03em;
+  }
+}
