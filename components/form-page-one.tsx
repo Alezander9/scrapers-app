@@ -24,8 +24,8 @@ export function FormPageOne({ state, onChange, onNext }: FormPageOneProps) {
 
       <div className="space-y-8">
         <div>
-          <label className="text-xs text-zinc-600 font-mono uppercase mb-2 block">
-            1. Website to start at
+          <label className="text-sm text-zinc-300 font-mono mb-2 block">
+            1. Starting URL
           </label>
           <Input
             value={state.websiteUrl}
@@ -35,8 +35,8 @@ export function FormPageOne({ state, onChange, onNext }: FormPageOneProps) {
         </div>
 
         <div>
-          <label className="text-xs text-zinc-600 font-mono uppercase mb-2 block">
-            2. Scraping instructions
+          <label className="text-sm text-zinc-300 font-mono mb-2 block">
+            2. Scraping Instructions
           </label>
           <Textarea
             value={state.instructions}
@@ -47,8 +47,8 @@ export function FormPageOne({ state, onChange, onNext }: FormPageOneProps) {
         </div>
 
         <div>
-          <label className="text-xs text-zinc-600 font-mono uppercase mb-2 block">
-            3. Output format
+          <label className="text-sm text-zinc-300 font-mono mb-2 block">
+            3. Output Format
           </label>
           <Textarea
             value={state.outputFormat}

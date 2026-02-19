@@ -33,8 +33,8 @@ export function FormPageTwo({
       <div className="space-y-10">
         {/* 1. When to run */}
         <div>
-          <label className="text-xs text-zinc-600 font-mono uppercase mb-3 block">
-            1. When to run?
+          <label className="text-sm text-zinc-300 font-mono mb-3 block">
+            1. When should this run?
           </label>
           <RadioGroup
             value={state.schedule}
@@ -56,8 +56,8 @@ export function FormPageTwo({
 
         {/* 2. Where to send results */}
         <div>
-          <label className="text-xs text-zinc-600 font-mono uppercase mb-3 block">
-            2. Where to send results?
+          <label className="text-sm text-zinc-300 font-mono mb-3 block">
+            2. Where should results go?
           </label>
           <RadioGroup
             value={state.deliveryMethod}
@@ -103,8 +103,8 @@ export function FormPageTwo({
 
         {/* 3. When should we verify results */}
         <div>
-          <label className="text-xs text-zinc-600 font-mono uppercase mb-3 block">
-            3. When should we verify results?
+          <label className="text-sm text-zinc-300 font-mono mb-3 block">
+            3. How often should we verify results?
           </label>
           <RadioGroup
             value={state.verifySchedule}
@@ -126,8 +126,8 @@ export function FormPageTwo({
 
         {/* 4. What to do on scrape failure */}
         <div>
-          <label className="text-xs text-zinc-600 font-mono uppercase mb-3 block">
-            4. What to do on scrape failure?
+          <label className="text-sm text-zinc-300 font-mono mb-3 block">
+            4. How should we handle errors?
           </label>
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
@@ -140,7 +140,7 @@ export function FormPageTwo({
                 htmlFor="failure-fix"
                 className="text-sm text-zinc-300 font-mono cursor-pointer"
               >
-                Fix it
+                Fix them
               </Label>
             </div>
             <div className="flex items-center gap-3">
